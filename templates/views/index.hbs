@@ -1,0 +1,31 @@
+{{!-- handle bar file i.e file that has common of header or footer which can can be used in every otehr page
+
+--}}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h1>Weather fetch from this site</h1>
+        <form>
+            <input placeholder="Address">
+            <button>Search</button>
+        </form>
+        <p id="error"></p>
+        <p id="response"></p>
+    </div>
+
+    {{>footer}}
+        <script src="/js/app.js"></script>
+
+
+</body>
+
+</html>
